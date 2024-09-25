@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Programming Blog</title>
+		<link rel="stylesheet" href="../styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<ul class="nav-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<article class="post">
+				<h2 class="post-title">Understanding CSS Variables</h2>
+				<p class="post-meta">
+					September 25, 2024
+				</p>
+				<p class="post-content">
+					CSS variables, also known as custom properties, allow you to
+					store values that can be reused throughout your stylesheet.
+					They are defined with a <code>--</code> prefix and can be
+					accessed using the <code>var()</code> function. This helps
+					in maintaining a consistent style across your web
+					application.
+				</p>
+
+				<h3>Defining CSS Variables</h3>
+				<p>
+					CSS variables can be defined in the :root pseudo-class to
+					make them globally accessible:
+				</p>
+				<pre><code>
+:root {
+    --primary-color: #3498db;
+    --font-size: 16px;
+}
+            </code></pre>
+
+				<h3>Using CSS Variables</h3>
+				<p>
+					Once defined, you can use these variables anywhere in your
+					CSS:
+				</p>
+				<pre><code>
+body {
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
+}
+            </code></pre>
+
+				<h3>Benefits of CSS Variables</h3>
+				<p>Using CSS variables comes with several advantages:</p>
+				<ul>
+					<li>
+						<strong>Easy to Update:</strong> Change a value in one
+						place, and it updates everywhere.
+					</li>
+					<li>
+						<strong>Dynamic Styling:</strong> Change the variable
+						value with JavaScript for dynamic themes.
+					</li>
+					<li>
+						<strong>Inheritability:</strong> Variables can inherit
+						values from their parent elements, making them flexible.
+					</li>
+				</ul>
+
+				<p>
+					For more complex applications, consider using CSS variables
+					for themes or color schemes to enhance user experience.
+				</p>
+			</article>
+
+			<aside class="sidebar">
+				<h3>Categories</h3>
+				<ul>
+					<li><a href="#">Web Development</a></li>
+					<li><a href="#">Programming Languages</a></li>
+					<li><a href="#">Tips & Tricks</a></li>
+				</ul>
+			</aside>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 My Programming Blog. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

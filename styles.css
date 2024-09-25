@@ -115,3 +115,46 @@ main {
 .blogs a:hover {
 	color: #0056b3;
 }
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.post-title {
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.sidebar {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.sidebar h3 {
+    font-family: var(--font-heading);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
