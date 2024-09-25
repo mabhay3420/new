@@ -1,0 +1,53 @@
+ :root {
+ 	--black: #000814;
+  	--page-background: #ccc;
+ }
+
+/* Typography */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--black);
+    background-color: var(--page-background);
+    padding: 20px;
+}
+
+/* Links */
+
+a {
+	color: var(--black);
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+	list-style: none; /*  No bullets */
+    display: flex;
+    gap: 40px;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blogs {
+    padding-left: 15px;
+    border-left: 10px;
+}
+
+.blogs a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.blogs a:hover {
+    color: #0056b3;
+}
